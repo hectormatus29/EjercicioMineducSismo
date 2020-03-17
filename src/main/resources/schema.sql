@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS sismo;
+ 
+CREATE TABLE Sismo (
+  id_sismo INT IDENTITY NOT NULL PRIMARY KEY,
+  fecha VARCHAR(500) NOT NULL,
+  magnitud VARCHAR(500) NOT NULL,
+  titulo VARCHAR(500) DEFAULT NULL,
+  lugar VARCHAR(500) DEFAULT NULL,
+  tsunami INT,
+  status VARCHAR(40)
+);
+ 
